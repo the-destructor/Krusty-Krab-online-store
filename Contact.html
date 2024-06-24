@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Krusty Krab</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <header>
+        <h1>Krusty Krab</h1>
+        <nav>
+            <a href="Home.html">Home</a>
+            <a href="Menu.html">Products</a>
+            <a href="About.html">About Us</a>
+            <a href="Contact.html">Contact</a>
+        </nav>
+    </header>
+    <section>
+        <h2>Contact Us</h2>
+        <p>We'd love to hear from you! Whether you have a question about our products, need assistance or just want to give us feedback, feel free to contact us using the form below or through our contact details.</p>
+        
+        <h3>Contact Information</h3>
+        <p>Email: support@KrustyKrabs.com</p>
+        <p>Phone: Spongebob </p>
+        <p>Address: Bikini Bottom</p>
+        
+        <h3>Contact Form</h3>
+        <form action="submit_contact_form.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+            
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" name="subject" required><br><br>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea><br><br>
+            
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2024 Krabs. All rights reserved.</p>
+    </footer>
+</body>
+</html>
