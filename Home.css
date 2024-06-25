@@ -3,6 +3,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    animation: body-animation 0s forwards 0s;
 }
 header {
     background-color: #333;
@@ -10,10 +11,17 @@ header {
     padding: 20px;
     text-align: center;
 } 
+h1 img{
+
+    width: 150px;
+    height: 150px;
+    filter: invert(1);
+}
 nav {
     background-color: #444;
     padding: 10px;
     text-align: center;
+    
 }
 nav a {
     color: #fff;
@@ -91,6 +99,23 @@ section {
 @keyframes slide-right-again {
     0% { transform: translateX(0); }
     100% { transform: translateX(100%); }
+}
+
+@keyframes body-animation {
+    0% {
+        transform: scaleY(100vh);
+        transform: scaleX(100vw);
+    }
+    99% {
+        transform: scaleY(100vh);
+        transform: scaleX(100vw);
+    }
+    100% {
+        transform: scaleY(100%);
+        transform: scaleX(100%)
+    
+    }
+
 }
 
 /* Apply animations to the slices */

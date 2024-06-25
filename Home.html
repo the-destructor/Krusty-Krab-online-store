@@ -1,146 +1,10 @@
 <!DOCTYPE html>
+<link rel="stylesheet" href="Home.css">
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Krusty Krab</title>
-    <style>
-       
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-        } 
-        nav {
-            background-color: #444;
-            padding: 10px;
-            text-align: center;
-        }
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            padding: 10px 20px;
-        }
-        nav a:hover {
-            background-color: #555;
-        }
-        section {
-            padding: 20px;
-        }
-        .loading {
-            width: 100vw;
-            height: 100vh;
-            margin: 0;
-            padding: 0;
-            position: absolute;
-            animation-iteration-count: 1;
-            animation: example 5s forwards;
-            top: 0;
-            left: 0;
-        }
-
-        .logo-container {
-            position: relative;
-            height: 50vh;
-            width: auto;
-            border: 1px;
-            margin-top: 25vh;
-            overflow: hidden;
-        }
-
-        /* Base styles for each slice */
-        .logo-slice {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            background: url('krusty.svg') no-repeat center;
-            background-size: contain;
-            filter: invert(1);
-        }
-
-        /* Top slice */
-        .logo-slice.top {
-            
-            clip-path: inset(0 0 calc(100% - 33.33%) 0);
-        }
-
-        /* Middle slice */
-        .logo-slice.middle {
-            
-            clip-path: inset(calc(100% - 66.66%) 0 calc(100% - 66.66%) 0 );
-        }
-
-        /* Bottom slice */
-        .logo-slice.bottom {
-            
-            clip-path: inset(calc(100% - 33.33%) 0 0 0);
-        }
-
-        /* Animation for the top slice */
-        @keyframes slide-right {
-            0% { transform: translateX(0); }
-            100% { transform: translateX(100%); }
-        }
-
-        /* Animation for the middle slice */
-        @keyframes slide-left {
-            0% { transform: translateX(0); }
-            100% { transform: translateX(-100%); }
-        }
-
-        /* Animation for the bottom slice */
-        @keyframes slide-right-again {
-            0% { transform: translateX(0); }
-            100% { transform: translateX(100%); }
-        }
-
-        /* Apply animations to the slices */
-        .logo-slice.top {
-            animation: slide-right 2s forwards 1s;
-        }
-
-        .logo-slice.middle {
-            animation: slide-left 2s forwards 1.25s; /* Delay to start after top slice */
-        }
-
-        .logo-slice.bottom {
-            animation: slide-right-again 2s forwards 1.5s; /* Delay to start after middle slice */
-        }
-
-
-        @keyframes example {
-            0% {
-                background-color: rgba(0, 0, 0, 1);
-                z-index: 100;
-                width: 100vw;
-                height: 100vh;
-            }
-            50% {
-                background-color: rgba(0, 0, 0, 1);
-                z-index: 100;
-                width: 100vw;
-                height: 100vh;
-            }
-            99% {
-                background-color: rgba(0, 0, 0, 0);
-                z-index: 100;
-                width: 100vw;
-                height: 100vh;
-            }
-            100% {
-                background-color: rgba(0, 0, 0, 0);
-                z-index: -100;
-                width: 0vw;
-                height: 0vh;
-            }
-        }
-    </style>
 </head>
 <body>
     <div class="loading">
@@ -153,14 +17,16 @@
         </div>
     </div>
     <header>
-        <h1>Krusty Krab</h1>
+        <h1><img src="krusty.svg" alt="Logo"> </h1>
+        <nav>
+            
+            <a href="Home.html">Home</a>
+            <a href="Menu.html">Products</a>
+            <a href="About.html">About Us</a>
+            <a href="Contact.html">Contact</a>
+        </nav>
     </header>
-    <nav>
-        <a href="Home.html">Home</a>
-        <a href="Menu.html">Products</a>
-        <a href="About.html">About Us</a>
-        <a href="Contact.html">Contact</a>
-    </nav>
+    
     <section>
         <h2>Welcome to The Krusty Krab</h2>
         <p>Nourishing Nature's Best: Organic Meat, Simply Delicious</p>
