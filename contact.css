@@ -57,3 +57,7 @@ button {
 button:hover {
     background-color: #555;
 }
+img{
+    width: 25%;
+    height: 25%;
+}
